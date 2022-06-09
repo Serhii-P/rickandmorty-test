@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/rickandmorty-test/" element={<Layout />}>
           <Route path="/" element={<Character page={page}  setPage={setPage}/>} />
           <Route path="/:characterId" element={<CharacterDetails />} />
           <Route path="search" element={<Search />} />
