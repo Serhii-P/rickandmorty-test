@@ -1,0 +1,23 @@
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.linkWrapper {
+  text-decoration: none;
+  max-width: 500px;
+}
+
+.cardBlock {
+  margin-bottom: 20px;
+}
+
+.cardArea {
+  display: flex;
+}
+
+.actionArea {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
