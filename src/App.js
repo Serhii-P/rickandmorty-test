@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/:characterId" element={<CharacterDetails />} />
           <Route path="search" element={<Search />} />
           <Route path="/search/character/:characterId" element={<CharacterDetails />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Route>
 
         {/* <Route path="/rickandmorty-test/" element={<Layout />}>

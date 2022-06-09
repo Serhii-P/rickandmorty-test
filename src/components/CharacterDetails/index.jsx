@@ -16,10 +16,10 @@ const CharacterDetails = () => {
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    // const index = parseFloat(characterId)
-    // if (typeof index !== 'number' || isNaN(index)) {
-    //   return navigate('*')
-    // }
+    const index = parseFloat(characterId)
+    if (typeof index !== 'number' || isNaN(index)) {
+      return navigate('*')
+    }
     getCharacterDetails(characterId)
     .then(res => {
        setSpecies(res);
