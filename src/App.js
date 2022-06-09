@@ -13,12 +13,12 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route path="/rickandmorty-test" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route path="/" element={<Character page={page}  setPage={setPage}/>} />
           <Route path="/:characterId" element={<CharacterDetails />} />
           <Route path="search" element={<Search />} />
           <Route path="/search/character/:characterId" element={<CharacterDetails />} />
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
 
         {/* <Route path="/rickandmorty-test/" element={<Layout />}>
